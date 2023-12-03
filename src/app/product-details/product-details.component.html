@@ -1,0 +1,33 @@
+<div @fadeIn class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Product Details.</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round mb-5">
+
+        
+        <div class="row mt-5">
+            <div class="col-lg-7">
+                <img src="{{detData.image}}" style="width: 440px;height:500px;">
+            </div>
+            <div class="col-lg-5">
+                <div class="stars">
+                    <h3><i [ngClass]="rate" class="fa-solid fa-star"></i></h3>
+                    <h3><i [ngClass]="rate" class="fa-solid fa-star"></i></h3>
+                    <h3><i [ngClass]="rate" class="fa-solid fa-star"></i></h3>
+                    <h3><i [ngClass]="rate" class="fa-solid fa-star"></i></h3>
+                    <h3><i [ngClass]="rate" class="fa-regular fa-star-half-stroke"></i></h3>
+                    
+                </div>
+                <h3 [ngClass]="h3">{{detData.title}}</h3>
+                <h3 [ngClass]="h4">{{detData.category}}</h3>
+                <h3 [ngClass]="h4">{{detData.price}}  $</h3>
+                <p [ngClass]="p">{{detData.description}}</p>
+
+                <div class="btns">
+                    <button [ngClass]="explor"> <i class="fa-solid fa-arrow-left"></i> <a routerLink="/products">explore products</a></button>
+                    <button [ngClass]="cart"> <a routerLink="/cart">add to cart </a> <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

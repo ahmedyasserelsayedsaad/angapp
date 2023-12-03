@@ -1,0 +1,25 @@
+.label{
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn2{
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.877);
+        padding: 20px;
+        text-decoration: none;
+        margin-top: 20px;
+        color: white;
+        font-weight: 700;
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        transition: all 0.7s ease;
+    }
+    .btn2:hover{
+    transform: scale(.9);
+    }

@@ -1,0 +1,59 @@
+<div @fadeIn class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Contact us</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <img [src]="img" alt="contact" style="width:290px;height:200px">
+        <form #c="ngForm" (ngSubmit)="add(c)">
+            <div class="mb-3">
+                <label [ngClass]="lab" for="exampleFormControlInput1" class="form-label">UserName</label>
+                <input type="text" name="user" #uu class="form-control" #user="ngModel" placeholder="ahmedyasser" ngModel
+                    required minlength="10">
+                <div class="alert alert-danger" *ngIf="user.errors?.required && user.touched">
+                    UserName is required
+                </div>
+                <div class="alert alert-danger" *ngIf="user.errors?.minlength && user.touched">
+                    UserName is required minlength 10 chars
+                </div>
+            </div>
+            <div class="mb-3">
+                <label [ngClass]="lab" for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" #ee class="form-control" name="email" #email="ngModel" ngModel placeholder="name@example.com"
+                    required minlength="10">
+                <div class="alert alert-danger" *ngIf="email.errors?.required && email.touched">
+                    email is required
+                </div>
+                <div class="alert alert-danger" *ngIf="email.errors?.minlength && email.touched">
+                    email is required minlength 10 chars
+                </div>
+            </div>
+            <div class="mb-3">
+                <label [ngClass]="lab" for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea #ff class="form-control"  rows="3" ></textarea>
+              </div>
+              <button type="submit" [disabled]="c.invalid" class="btn btn-danger">send</button>
+        </form>
+
+    </div>
+
+</div>
+<!--<form #c="ngForm" (ngSubmit)="add(c)">
+            <div class="mb-3">
+                <label [ngClass]="lab" for="exampleFormControlInput1" class="form-label">UserName</label>
+                <input type="text" name="user" class="form-control" #user  placeholder="ahmedyasser" required minlength="10">
+                <div class="alert alert-danger" *ngIf="user.errors?.required && user.touched">
+                    user is required 
+                     </div>
+                     <div class="alert alert-danger" *ngIf="user.errors?.minlength && user.touched">
+                        user must be minlength 10 charatrs
+                     </div>
+              </div>
+              <div class="mb-3">
+                <label [ngClass]="lab" for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input  type="email" class="form-control"  placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label [ngClass]="lab" for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control"  rows="3" ></textarea>
+              </div>
+              <button type="submit" [disabled]="c.invalid" class="btn btn-danger">send</button>
+          </form>-->

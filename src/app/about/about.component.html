@@ -1,0 +1,123 @@
+<div @fadeIn class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" id="About" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>About us</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <img [src]="img" alt="" style="width: 290px;height: 200px;">
+        <div class="about">
+            <div class="info">
+                <h3 [ngClass]="title">we are a online store ..!</h3>
+                <p [ngClass]="ptitle">you can find what ..?</p>
+                <marquee
+                    style="background-color: rgba(255, 0, 0, 0.671);padding: 
+                    8px;color: white; 
+                    font-size: 20px; font-weight:500;
+                    letter-spacing: 5px;border-radius: 5px;text-transform: capitalize;">
+                    you can find all things that you search for...
+                    amazing things wait you to put it in your cart...
+                </marquee>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"style="display: none;"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1"style="display: none;"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"style="display: none;"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"style="display: none;"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"style="display: none;"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img [src]="a1" class="d-block w-100" style="height: 100%;">
+                            <div class="carousel-caption d-sm-block d-md-block">
+                              <h5 style="color: black;font-size: 25px;font-weight: 600;">amazing products</h5>
+                              <p style="color: black;font-weight: 600;">these products for you && you will find different things.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img [src]="a2" class="d-block w-100"  style="height: 100%;">
+                            <div class="carousel-caption d-sm-block d-md-block">
+                              <h5 style="color: black;font-size: 25px;font-weight: 600;">findout all you need </h5>
+                              <p style="color: black;font-weight: 600;">in our store we will findout many things </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img [src]="a3" class="d-block w-100" style="height: 100%;">
+                            <div class="carousel-caption d-sm-block d-md-block">
+                              <h5 style="color: rgb(245, 239, 239);font-size: 25px;font-weight: 600;">clothes & shoses</h5>
+                              <p style="color: rgb(250, 249, 249);font-weight: 600;">in our store we will findout many things.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img [src]="a4" class="d-block w-100" alt="..." style="height: 100%;">
+                            <div class="carousel-caption d-sm-block d-md-block">
+                              <h5 style="color: black;font-size: 25px;font-weight: 600;">all modern and new</h5>
+                              <p style="color: black;font-weight: 600;"> these products for you && you will find different things.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img [src]="a5" class="d-block w-100" alt="..." style="height: 100%;">
+                            <div class="carousel-caption d-sm-block d-md-block">
+                              <h5 style="color: black;font-size: 25px;font-weight: 600;">what you want..? login now</h5>
+                              <p style="color: black;font-weight: 600;">in our store we will findout many things.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" >
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="team">
+                        team member
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <h5 class="text-center"  style="color: rgba(255, 0, 0, 0.685); font-weight: 700;">OUR TEAM</h5>
+                    <h3 class="text-center"  style="color: rgba(255, 0, 0, 0.685); font-weight: 800;">Creative And Talented</h3>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="tee">
+                       <div class="team1">
+                        <img [src]="t1" alt="" srcset=""> 
+                       </div>
+                        <h3 style="text-transform: capitalize;color: rgba(255, 0, 0, 0.74);font-weight: 700;" class="text-center">ahmed yasser</h3>
+                        <h5 style="color: gray;font-weight: 600;" class="text-center">Web developer</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="tee">
+                        <div class="team1">
+                            <img [src]="t2" alt="" srcset="">
+                        </div>
+                        <h3 style="text-transform: capitalize;color: rgba(255, 0, 0, 0.705);font-weight: 700;" class="text-center">yasser ahmed</h3>
+                        <h5 style="color: gray;font-weight: 600;" class="text-center">UI/UX DESIGNER</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="tee">
+                        <div class="team1">
+                            <img [src]="t3" alt="" srcset="">
+                        </div>
+                        <h3 style="text-transform: capitalize;color: rgba(255, 0, 0, 0.733);font-weight: 700;" class="text-center">ahmed saad</h3>
+                        <h5  style="color: gray;font-weight: 600;" class="text-center">Mobile developer</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

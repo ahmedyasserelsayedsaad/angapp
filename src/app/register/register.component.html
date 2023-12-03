@@ -1,0 +1,59 @@
+<div @fadeIn  class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>register.</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <img src="{{img}}" alt="signup" style="width: 300px;height: 200px;">
+        <form  #f="ngForm" (ngSubmit)="add(f)">
+            <div class="mb-3">
+                <label [ngClass]="lab">FirstName</label>
+                <input type="text" class="form-control" name="FirstName" #FirstName="ngModel" ngModel required minlength="5">
+                <div class="alert alert-danger" *ngIf="FirstName.errors?.required && FirstName.touched">
+                    FirstName is required 
+                </div>
+                <div class="alert alert-danger" *ngIf="FirstName.errors?.minlength && FirstName.touched">
+                    FirstName must be minlength 5 charatrs
+                </div>
+                
+              </div>
+              <div class="mb-3">
+                <label [ngClass]="lab">LastName</label>
+                <input type="text" class="form-control" name="LastName" #LastName="ngModel" ngModel required minlength="5">
+                <div class="alert alert-danger" *ngIf="LastName.errors?.required && LastName.touched">
+                    LastName is required 
+                </div>
+                <div class="alert alert-danger" *ngIf="LastName.errors?.minlength && LastName.touched">
+                    LastName must be minlength 5 charatrs
+                </div>
+                
+              </div>
+            <div class="mb-3">
+              <label [ngClass]="lab">Email address</label>
+              <input type="email" class="form-control" name="email" #email="ngModel" ngModel required minlength="10">
+              <div class="alert alert-danger" *ngIf="email.errors?.required && email.touched">
+             email is required 
+              </div>
+              <div class="alert alert-danger" *ngIf="email.errors?.minlength && email.touched">
+                email must be minlength 10 charatrs
+              </div>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label [ngClass]="lab">Password</label>
+              <input type="password"class="form-control" name="password" #password="ngModel" ngModel required minlength="8">
+              <div class="alert alert-danger" *ngIf="password.errors?.required && password.touched">
+                password is required
+              </div >
+              <div class="alert alert-danger" *ngIf="password.errors?.minlength && password.touched">
+                password must be minlength 8 digits
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label [ngClass]="lab">Remmeber me</label>
+            </div>
+            <button type="submit" [disabled]="f.invalid" class="btn btn-danger">Submit</button>
+          </form>  
+         
+      </div>
+      <button  class="btn2" (click)="login()">login</button>
+    </div>

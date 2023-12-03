@@ -1,0 +1,44 @@
+.h3{
+    color: rgba(255, 0, 0, 0.856);
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0px 0px 3px gray;
+}
+
+.p{
+    color: rgba(80, 76, 76, 0.856);
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.team{
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 155px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.288) 0%, rgba(255, 0, 0, 0.103) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.tee img{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+border: 6px solid rgba(255, 0, 0, 0.658);
+}
+.tee .team1{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 16px solid rgba(255, 0, 0, 0.658);
+    padding-top: 11px;
+    text-align: center;
+    align-items: center;  
+}

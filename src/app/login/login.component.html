@@ -1,0 +1,37 @@
+
+<div @fadeIn class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Login.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <form  #f="ngForm" (ngSubmit)="add(f)">
+        <div class="mb-3">
+          <label [ngClass]="lab">Email address</label>
+          <input type="email" class="form-control" name="email" #email="ngModel" ngModel required minlength="10">
+          <div class="alert alert-danger" *ngIf="email.errors?.required && email.touched">
+         email is required 
+          </div>
+          <div class="alert alert-danger" *ngIf="email.errors?.minlength && email.touched">
+            email must be minlength 10 charatrs
+          </div>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label [ngClass]="lab">Password</label>
+          <input type="password"class="form-control" name="password" #password="ngModel" ngModel required minlength="8">
+          <div class="alert alert-danger" *ngIf="password.errors?.required && password.touched">
+            password is required
+          </div >
+          <div class="alert alert-danger" *ngIf="password.errors?.minlength && password.touched">
+            password must be minlength 8 digits
+          </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label [ngClass]="lab">Check me out</label>
+        </div>
+        <button type="submit" [disabled]="f.invalid" class="btn btn-danger">Submit</button>
+      </form>  
+     
+  </div>
+  <button  class="btn2" (click)="reg()">register</button>
+</div>
